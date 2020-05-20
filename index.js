@@ -92,8 +92,8 @@ function getAverageGoals(callback) {
   let averageAway = callback.reduce((acc, currentValue) => {
     return (acc += currentValue["Away Team Goals"]);
   }, 0);
-  console.log(Math.round(averageHome / 851));
-  console.log(Math.round(averageAway / 851));
+  console.log(averageHome / 851);
+  console.log(averageAway / 851);
 }
 getAverageGoals(fifaData);
 
